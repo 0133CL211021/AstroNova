@@ -1,0 +1,1419 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: Chakra Petch; 
+
+}
+html,body{
+height: 100%;
+width: 100%;
+
+}
+#main{
+    width: 100%;
+   
+    
+    position: relative;
+    padding: 10px;
+    
+}
+
+#cursor{
+    height:40px;
+    width: 40px;
+    border: 4px solid rgb(25, 24, 24);
+    border-radius: 50%;
+    border:ridge;
+    position: fixed;
+    
+    /* position: relative; */
+    z-index: 9999;
+    
+}
+#dot{
+    height:3px;
+    width: 3px;
+    border-radius: 50%;
+    background-color:rgb(39, 35, 35);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    
+}
+
+#logoPage{
+    height:100vh;
+    width: 100%;
+    background-color: black;
+    
+    position: relative;
+   
+}
+#logoPage h4{
+    color: white;   
+    position: absolute;
+    top: 40%;
+    left: 8%;
+    font-weight: 400;
+}
+
+#logoPage img{
+    position: absolute;
+    height: 400px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#logoPage #mainlogo{
+    position: absolute;
+    height: 70px;
+    top: 43%;
+}
+
+#box1{
+    height: 100%;
+    width:2px;
+    background-color: rgba(236, 231, 231, 0.509);
+    position: absolute;
+    margin-left: 5%;
+}
+#box2{
+    height: 100%;
+    width:2px;
+    background-color: rgba(241, 223, 223, 0.493);
+    position: absolute;
+    margin-left: 95%;
+}
+
+#box3{
+    height:1px;
+    width: 90%;
+    left: 5%;
+    position: absolute;
+    background-color:rgba(197, 197, 187, 0.479);
+    top: 43%;
+}
+
+/* ::-webkit-scrollbar{
+    display: none;
+} */
+#page2{
+    height: 100vh;
+    width: 100%;
+    background-color:black;
+    color: white;
+    position: relative;
+    display: none;
+    
+    
+     
+    
+
+}
+#page2 h1{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 27vh;
+    font-family: ChakraPetch;
+}
+
+
+#page3{
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    position: relative;
+    /* display: none; */
+}
+#page3 img{
+    height: 800px;
+    position: absolute;
+    left: 30%;
+    filter: drop-shadow(2px 2px 2px lightseagreen);
+    /* scale:0.5 */
+}
+
+#page3 #box1{
+    height: 100%;
+    width:2px;
+    background-color: rgba(236, 231, 231, 0.509);
+    position: absolute;
+    margin-left: 5%;
+}
+#page3 #box3{
+    height:0.4px;
+    width: 90%;
+    left: 5%;
+    position: absolute;
+    background-color:rgba(197, 197, 187, 0.479);
+    top: 51%;
+}
+
+#page3 #box2{
+    height: 100%;
+    width:2px;
+    background-color: rgba(241, 223, 223, 0.493);
+    position: absolute;
+    margin-left: 95%;
+}
+#page3 h4{
+    color: #fff;
+    position: absolute;
+    left: 10%;
+    top:30%;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+#page3 h1{
+    color: #fff;
+    position: absolute;
+    left: 10%;
+    top:58%;
+    line-height: 8vh;
+    font-weight: 800;
+    /* font-family: ChakraPetch-Bold;  */
+    font-family:chakraPetch, "40.8 px Chakra";
+    font-size: 10vh;
+    z-index: 9999;
+    
+}
+h1 span{
+    position: absolute;
+    margin-left: 10%;
+    
+}
+#page3 #register{
+    padding:10px 50px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    position: absolute;
+    font-size: 18px;
+    font-family:gilroy;
+    font-weight: 800;
+    bottom:30%;
+    right: 10%;
+    background-color: lightseagreen;
+    border: 2px solid white;
+    color: white;
+    box-shadow: 2px 2px 1px rgba(236, 236, 57, 0.573);
+}
+#page3 #mail{
+    padding: 10px 50px;
+    position: absolute;
+    right: 15%;
+    bottom: 20%;
+    font-size: 15px;
+    background-color: rgb(46, 45, 45);
+    color: rgba(255, 255, 255, 0.597);
+    border: 1px solid rgba(255, 255, 255, 0.385);
+    
+}
+
+#circularbox{
+    height:65px;
+    width: 65px;
+    border-radius: 50%;
+    
+    border: 2px dotted white;
+    position: absolute;
+    bottom: 18%;
+    right:9%;
+    transition: all ease 0.5s;
+    /* text-align: center; */
+}
+
+#circularbox:hover{
+    transform: scale(1.2);
+}
+#circularbox img{
+    height:30px;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+#page4{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    
+}
+
+#page4 #first{
+    height:700px;
+    position: absolute;
+    right: 0;
+}
+
+#page4 #second{
+    height:900px;
+    left: 0;
+}
+#page4 button{
+    font-size: 11px;
+    padding: 5px 12px;
+    letter-spacing: 2px;
+    background-color: rgba(166, 159, 159, 0.345);
+    position: absolute;
+    border: none;
+    border-top-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    
+    
+
+    top:30%;
+    left: 15%;
+ 
+    
+}
+#page4 #line{
+    height: 2px;
+    width: 58%;
+    background-color:rgba(0, 0, 0, 0.188);
+    position: absolute;
+    top: 31%;
+    left: 33%;
+
+}
+
+#page4 h1{
+    font-size:80px;
+    font-family: Chakra Petch; 
+    font-family: Arial, Helvetica, sans-serif;
+    /* color: rgba(51, 49, 49, 0.944); */
+}
+#page4 #EK{
+    position: absolute;
+    top:50%;
+    left: 30%;
+   
+}
+
+#page4 #DO{
+    position: absolute;
+    top: 60%;
+    left:39%;
+
+}
+#page5{
+    height:100vh;
+    width: 100%;
+    position: relative;
+}
+
+#page5 video{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+#page6{
+    min-height:100vh;
+    width: 100%;
+    position: relative;
+}
+#ekk{
+    min-height: 100vh;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width:1px;
+    background-color: rgba(0, 0, 0, 0.407);
+}
+#page6 #dibba {
+    width: 100%;
+    height:1px;
+    position: absolute;
+    top: 50%;
+    background-color:rgba(33, 31, 31, 0.429);
+ }
+ #dibbarot{
+    height: 100vh;
+    position: absolute;
+    left: 37%;
+    top: 43%;
+    width:1px;
+    background-color: rgba(0, 0, 0, 0.407);
+    rotate: 30deg;
+}
+#dibbarot1{
+    height: 100vh;
+    position: absolute;
+    right: 37%;
+    top: 43%;
+    width:1px;
+    background-color: rgba(0, 0, 0, 0.407);
+    rotate: -30deg;
+}
+#linn1{
+    width: 38%;
+    height:1px;
+    background-color: rgba(30, 29, 29, 0.252);
+    position: absolute;
+    top: 90%;
+    
+    left:0%;
+}
+#lin2{
+    width: 38%;
+    height:1px;
+    background-color: rgba(30, 29, 29, 0.252);
+    position: absolute;
+    top: 90%;
+    
+    right:0%;
+}
+#page6 img{
+    height:600px;
+    position: absolute;
+    top: 45%;
+    left: 40%;
+    z-index: 9999;
+    filter: drop-shadow(6px 6px 6px rgb(12, 12, 12));
+    
+}
+
+
+#page6 button{
+    font-size: 11px;
+    padding: 5px 12px;
+    letter-spacing: 2px;
+    background-color: rgba(166, 159, 159, 0.345);
+    position: absolute;
+    border: none;
+    border-top-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    
+    
+
+    top:45%;
+    left: 15%;
+ 
+    
+}
+#page6 h5{
+    color:rgba(46, 44, 44, 0.507);
+    position: absolute;
+    top:95%;
+    left: 8%;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+#cir{
+    height: 80px;
+    width: 80px;
+    border-radius:50%;
+    
+    position: absolute;
+    right:27%;
+    top: 95%;
+    border: 2px dotted black;
+    padding:18px;
+    /* position: relative; */
+    transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) 1s;
+}
+#cir:hover{
+    transform: scale(1.2);
+}
+#nn{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 2px solid lightseagreen;
+    position: relative;
+    padding: 17px;
+    
+}
+#page6 #learnning{
+    right: 20%;
+    position: absolute;
+    color:rgba(0, 0, 0, 0.862);
+    
+    bottom:0%;
+    font-weight: 600;
+}
+#point{
+    height: 3px;
+    width: 3px;
+    border-radius: 50%;
+    background-color:rgba(20, 18, 18, 0.668);
+    
+}
+
+#page7{
+    height:100vh;
+    width: 100%;
+    position: relative;
+}
+
+#page7 button{
+    font-size: 11px;
+    padding: 5px 12px;
+    letter-spacing: 2px;
+    background-color: rgba(166, 159, 159, 0.345);
+    /* position: absolute; */
+    border: none;
+    border-top-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    margin-top: 30%;
+    margin-left: 13%;
+    
+    
+
+    
+    
+}
+#page7 h1{
+    font-size:60px;
+    font-weight: 600;
+    line-height: 60px;
+    margin-top: 10%;
+    margin-left: 20%;
+    
+}
+
+#page8{
+    clip-path: polygon(50% 18%, 100% 0, 100% 100%, 0 100%, 0 0);
+    /* background-color: black; */
+    /* background-image: url(https://media.istockphoto.com/id/184601291/photo/xxxl-dark-concrete.webp?b=1&s=170667a&w=0&k=20&c=KRRXq0P41imqerPjYF4EgX7QOdbybyprM8ofKYoIzT4=); */
+    /* background-position: center;
+    background-size: cover; */
+
+    height: 150vh;
+    position: relative;
+    width: 100%;
+    background-color: black;
+  
+}
+
+#page8 #a{
+    height:300px;
+    rotate: 10deg;
+    background-color: black;
+    color: black;
+    position: absolute;
+    top: 10%;
+    left: 0;
+    z-index: 99;
+    /* filter: drop-shadow(4px 4px 4px yellow); */
+}
+
+#page8 #b{
+    height:300px;
+    position: absolute;
+    right: 0;
+    top: 5%;
+    rotate: -40deg;
+    z-index: 9999; filter: drop-shadow(4px 4px 4px rgb(7, 73, 95));
+    animation-name: anime;
+    animation-duration:4s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes anime {
+    0%{
+        top: 0;
+        transform: rotate(10deg)
+    }
+    50%{
+        top: 10%;
+        transform: rotate(-10deg)
+    }
+    100%{
+        top: 0;
+        transform: rotate(10deg)
+    }
+}
+
+#page8 #c{
+    position: absolute;
+    filter: drop-shadow(4px 4px 4px rgb(7, 73, 95));
+    top: 60%;
+    left: 5%;
+    rotate: 40deg;
+    height: 500px;
+    z-index: 9999;
+    animation-name: animee;
+    animation-duration:4s;
+    
+    animation-iteration-count: infinite;
+ 
+}
+@keyframes animee {
+    0%{
+        left: 0%;
+        transform: rotate(10deg)
+    }
+    50%{
+        left: 4%;
+        transform: rotate(-10deg)
+    }
+    100%{
+        left: 0%;
+        transform: rotate(10deg)
+    }
+}
+#page8 #d{
+    position: absolute;
+    height: 600px;
+    top: 50%;
+    left: 40%;
+    /* filter: drop-shadow(4px 4px 4px rgb(27, 27, 26)); */
+    filter: drop-shadow(4px 4px 4px rgb(7, 73, 95));
+    z-index: 99;
+    animation-name: animeee;
+    animation-duration:4s;
+   
+    animation-iteration-count: infinite;
+    
+    
+    
+}
+@keyframes animeee {
+    0%{
+        /* left: 0%; */
+        transform: rotate(0deg)
+    }
+    50%{
+        /* left: 4%; */
+        transform: rotate(360deg)
+    }
+    100%{
+        transform: rotate(0deg)
+    }
+}
+#page8 #v{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    
+}
+#page8 #imgg{
+    position: absolute;
+    height:300px;
+    left: 40%;
+    filter: drop-shadow(2px 2px 2px rgb(190, 236, 75));
+    top: 30%;
+    z-index: 99;
+    animation-name: animw;
+    animation-duration:7s;
+    animation-fill-mode: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function:linear;
+}
+
+@keyframes animw {
+    to{
+        top: 30%;
+        transform: rotate(10deg)
+    }
+    from{
+        top: 40%;
+        transform: rotate(-10deg)
+    }
+}
+#page8 h6{
+    font-size:15px;
+    color: rgba(255, 255, 255, 0.822);
+    position: absolute;
+    top: 50%;
+    left: 10%;
+}
+  
+#cir1{
+    height: 80px;
+    width: 80px;
+    border-radius:50%;
+    
+    position: absolute;
+    left:33%;
+    top: 64%;
+    border: 2px dotted rgb(231, 226, 226);
+    padding:18px;
+    /* position: relative; */
+    z-index: 9999;
+    transition: all ease-in 1s;
+}
+
+#cir1:hover{
+    transform: scale(1.2);
+}
+#nn1{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 2px solid lightseagreen;
+    position: relative;
+    padding: 17px;
+    z-index: 999;
+    
+}
+#page8 #learnning1{
+    left: 26%;
+    position: absolute;
+    color:rgba(250, 237, 237, 0.904);
+    
+    bottom:32%;
+    font-weight: 600;
+    z-index: 9999;
+}
+#point1{
+    height: 3px;
+    width: 3px;
+    border-radius: 50%;
+    background-color:rgba(239, 227, 227, 0.872);
+    z-index: 9999;
+    
+}
+#page8 #lime{
+    height:100%;
+    position: absolute;
+    left: 5%;
+    width: 2px;
+    background-color:rgba(220, 203, 203, 0.36);
+    z-index: 99999999;
+}
+#page8 #lime4{
+    height:100%;
+    position: absolute;
+    right: 5%;
+    width: 2px;
+    background-color:rgba(220, 203, 203, 0.36);
+    z-index: 99999999;
+}
+#page8 #ll{
+    height:1px;
+    position: absolute;
+    top: 67.2%;
+    left: 35.3%;
+    width: 10%;
+    background-color:rgba(220, 203, 203, 0.36);
+    
+    z-index: 99999999;
+}
+
+#page8 #ll4{
+    height:20%;
+    position: absolute;
+    top: 49.7%;
+    left: 49.9%;
+    width: 1px;
+    rotate: 40deg;
+    background-color:rgba(220, 203, 203, 0.36);
+    
+    z-index: 99999999;
+}
+
+
+#page9{
+    height:100vh;
+    width:100%;
+    background-color: black;
+    position: relative;
+    
+}
+
+#page9 h1{
+    color:rgb(249, 242, 242);
+    font-size:80px;
+    margin-left: 40%;
+    padding-top: 18%;
+    text-shadow: 2px 2px 2px rgba(54, 53, 53, 0.53);
+
+}
+
+#page9 svg{
+    height:400px;
+    position: absolute;
+    right: 10%;
+    top: 40%;
+}
+
+#j{
+    height:100%;
+    position: absolute;
+    top: 0;
+    left:5%;
+    width:1px;
+    background-color: rgba(255, 255, 255, 0.507);
+    /* background-color: red; */
+}
+
+#y{
+    height:100%;
+    position: absolute;
+    top: 0;
+    right:5%;
+    width:1px;
+    background-color: rgba(255, 255, 255, 0.507);
+    /* background-color: red; */
+}
+#o{
+    height:4px;
+    position: absolute;
+    top: 50%;
+    left:5%;
+    width:20%;
+    background-color: rgba(5, 91, 128, 0.507);
+    box-shadow: 1px 1px 1px yellow;
+    /* background-color: red; */
+}
+
+#t{
+    height:4px;
+    position: absolute;
+    top: 80%;
+    right:5%;
+    width:20%;
+    background-color: rgba(33, 116, 152, 0.644);
+    box-shadow: 1px 1px 1px yellow;
+    /* background-color: red; */
+}
+#page9 p{
+    color: rgba(255, 255, 255, 0.68);
+    position: absolute;
+    right: 7%;
+    top: 87%;
+}
+
+#page9 button{
+    padding:1px 20px;
+    background-color: rgba(58, 56, 56, 0.603);
+    color: white;
+    letter-spacing: 2px;
+    border: none;
+    border-radius: 3px;
+    position: absolute;
+    top: 35%;
+    left: 6%;
+}
+
+#page10{
+    height:100vh;
+    width: 100%;
+    position: relative;
+    background-color:black;
+    border-top: 1px solid rgba(244, 226, 226, 0.05);
+}
+#page10 img{
+    object-fit: cover;
+    height: 100%;
+    position: absolute;
+    left: 30%;
+    animation-name: sole;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-fill-mode: linear;
+}
+@keyframes sole {
+    from{
+        transform: scale(0)
+    }
+    to{
+        transform: scale(1)
+    }
+    
+}
+
+#page11{
+    height:100vh;
+    width: 100%;
+    background-color:black;
+    position: relative;
+    border-top: 1px solid rgba(255, 255, 255, 0.217);
+    clip-path: polygon(50% 0%, 100% 0, 100% 35%, 100% 100%, 81% 99%, 51% 86%, 23% 99%, 0 100%, 0% 35%, 0 0);
+
+
+}
+#page11 h1{
+    color: white;
+    font-size:70px;
+    padding-top: 10%;
+    margin-left: 40%;
+}
+#i{
+    height: 100%;
+    width:1px;
+    background-color: rgba(255, 255, 255, 0.402);
+    position: absolute;
+    left:30%;
+}
+#page11 button{
+    padding:1px 10px;
+    background-color: rgba(109, 105, 105, 0.251);
+    color: white;
+    letter-spacing: 5px;
+    position: absolute;
+    top: 20%;
+    left:10%;
+}
+
+#page12{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    /* background-color: rgba(174, 167, 167, 0.377); */
+    
+
+
+}
+#page12 svg{
+    height: 500px;
+    position: absolute;
+    right: 0;
+    top: 0;
+
+}
+
+#danger{
+    height: 100%;
+    position: absolute;
+    top: 0;
+      
+    /* margin-left: 10%; */
+    filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.804));
+    
+}
+
+
+#page12 h1{
+    position: absolute;
+    top: 50%;left: 20%;
+    line-height: 90px;
+    font-size:90px;
+    text-shadow: 2px 2px 2px rgba(50, 49, 49, 0.644);
+}
+#dibar{
+    height: 80%;
+    width:1px;
+    background-color: rgba(0, 0, 0, 0.285);
+    position: absolute;
+    top: 21%;
+    left: 49%;
+}
+#page12 h6{
+    color: rgba(0, 0, 0, 0.502);
+    position: absolute;
+    bottom:4%;
+    left: 25%;
+    font-size:15px;
+    
+}
+
+#container{
+    height:300px;
+    width: 50%;
+    /* background-color:red; */
+    position: absolute;
+    bottom:10%;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    overflow: auto;
+    /* z-index: 99999; */
+}
+
+
+.dd{
+    height: 280px;
+    width:200px;
+    /* background-color: green; */
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+.dd img{
+    object-fit: cover;
+    overflow: hidden;
+    filter: drop-shadow(2px 2px 2px rgb(69, 68, 68));
+}
+
+
+
+#page13{
+    height:100vh;
+    width:100%;
+    position: relative;
+    /* background-color: red; */
+}
+#page13 #pp{
+    height: 20vh;
+    width:1px;
+    position: absolute;
+    left: 49%;
+    background-color: rgba(22, 22, 22, 0.272);
+}
+
+#page13 #aa{
+    height: 70vh;
+    width:1px;
+    position: absolute;
+    left: 37.7%;
+    top: 11%;
+    rotate: 40deg;
+    background-color: rgba(22, 22, 22, 0.272);
+}
+
+#page13 #bb{
+    height: 70vh;
+    width:1px;
+    position: absolute;
+    right: 39.7%;
+    top: 11%;
+    rotate: -40deg;
+    background-color: rgba(22, 22, 22, 0.272);
+}
+
+#gg{
+    width:26%;
+    height: 1px;
+    background-color: rgba(22, 22, 22, 0.272);
+    position: absolute;
+    top:60%;
+    left: 6%;
+}
+#hh{
+    width:26%;
+    height: 1px;
+    background-color: rgba(22, 22, 22, 0.272);
+    position: absolute;
+    top:60%;
+    right: 8%;
+}
+
+#page13 img{
+    height: 70%;
+    position: absolute;
+    left: 37%;
+    top: 10%;
+    filter: drop-shadow(5px 6px 8px rgba(53, 53, 53, 0.578));
+    animation-name: anime;
+    animation-duration:4s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    
+
+}
+
+@keyframes anime {
+    0% {
+      top: 0%; /* Initial position */
+    }
+    50% {
+      top: 10%; /* Intermediate position */
+    }
+    100% {
+      top: 0%; /* Final position, matches initial for smooth looping */
+    }
+  }
+
+
+#page13 h2{
+    position: absolute;
+    top: 40%;
+    left:6%;
+    font-size: 50px;
+    text-shadow: 4px 4px 4px rgba(45, 44, 44, 0.208);
+}
+
+#page13 h5{
+    position: absolute;
+    top: 45%;
+    right:5%;
+    color: rgb(40, 39, 39);
+    font-size: 16px;
+    text-shadow: 4px 4px 4px rgba(45, 44, 44, 0.208);
+}
+#cir2{
+    height: 80px;
+    width: 80px;
+    border-radius:50%;
+    
+    position: absolute;
+    left:24%;
+    top: 68%;
+    border: 2px dotted rgb(20, 19, 19);
+    padding:18px;
+    /* position: relative; */
+    z-index: 9999;
+    transition: all ease-in 1s;
+}
+
+#cir2:hover{
+    transform: scale(1.2);
+}
+#nn2{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 2px solid lightseagreen;
+    position: relative;
+    padding: 17px;
+    z-index: 999;
+    
+}
+#page13 #learnning1{
+    left: 26%;
+    position: absolute;
+    color:rgba(23, 22, 22, 0.904);
+    
+    bottom:32%;
+    font-weight: 600;
+    z-index: 9999;
+}
+#point2{
+    height: 3px;
+    width: 3px;
+    border-radius: 50%;
+    background-color:rgba(18, 17, 17, 0.872);
+    z-index: 9999;
+    
+}
+ #cir6{
+    height: 80px;
+    width: 80px;
+    border-radius:50%;
+    
+    position: absolute;
+    right:26%;
+    top: 68%;
+    border: 2px dotted rgb(20, 19, 19);
+    padding:18px;
+   
+    z-index: 9999;
+    transition: all ease-in 1s;
+}
+
+#cir6:hover{
+    transform: scale(1.2);
+}
+#nn6{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 2px solid lightseagreen;
+    position: relative;
+    padding: 17px;
+    z-index: 999;
+    
+}
+#page13 #learnning1{
+    left: 26%;
+    position: absolute;
+    color:rgba(23, 22, 22, 0.904);
+    
+    bottom:32%;
+    font-weight: 600;
+    z-index: 9999;
+}
+#point6{
+    height: 3px;
+    width: 3px;
+    border-radius: 50%;
+    background-color:rgba(18, 17, 17, 0.872);
+    z-index: 9999;
+}
+
+#page13 h6{
+    position: absolute;
+    top:72%;
+    left: 16%;
+    font-size:15px;
+}
+
+
+#page14{
+    height:100vh;
+    width: 100%;
+    position: relative;
+    
+}
+#page14 svg{
+    height:400px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#page14 h1{
+    font-size:70px;
+    padding-top: 10%;
+    padding-left: 14%;
+    line-height: 60px;
+
+}
+#page14 button{
+    padding:10px 20px;
+    background-color:rgba(65, 62, 62, 0.21);
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 23px;border: none;
+    position: absolute;
+    top:5%;
+    left: 10%;
+    letter-spacing: 2px;
+    
+    
+}
+#baxa1{
+    min-height: 650px;
+    width:450px;
+    /* background-color: red; */
+    position: absolute;
+    top: 38%;
+    left: 14%;
+    border: 2px dashed rgba(58, 54, 54, 0.635);
+    padding: 20px;
+    object-fit: cover;
+    /* overflow: hidden; */
+}
+#baxa1 img{
+    object-fit:cover;
+    object-position: top;
+    
+    
+    height:600px;
+    width: 400px;
+}
+#baxa2{
+    height: 650px;
+    width:450px;
+    padding: 20px;
+   
+    position: absolute;
+    right: 30%;
+    top: 38%;
+    border: 2px dashed rgba(58, 54, 54, 0.635);
+    overflow: hidden;
+}
+#baxa2 img{
+    object-fit:cover;
+    height: 600px;
+    width: 400px;
+}
+#page14 p{
+    /* bottom:0%; */
+    right: 4%;
+    top: 100%;
+    color: rgb(67, 63, 63);
+    position: absolute;
+}
+#page15{
+    min-height:140vh;
+    width: 100%;position: relative;
+    clip-path: polygon(51% 13%, 100% 0, 100% 100%, 0 100%, 0 0);
+    
+
+    margin-top: 240px;
+    background-image: url("prefooter.webp");
+    background-position: center;
+    overflow: hidden;
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    position: relative;
+}
+#page15 p{
+    position: absolute;
+    color: white;
+    top: 20%;
+    left: 13%;
+}
+#page15 h1{
+    margin-top:30%;
+    margin-left:20%;
+    color: white;
+    font-size: 70px;
+    line-height: 60px;
+}
+#page16{
+    height: 100vh;
+    width: 100%;background-color: black;
+    position: relative;
+}
+
+#one{
+    height: 100vh;
+    width: 1px;
+    background-color:rgba(103, 98, 98, 0.68);
+    position: absolute;
+    left: 10%;
+}
+
+#two{
+    height: 100vh;
+    width: 1px;
+    background-color:rgba(103, 98, 98, 0.68);
+    position: absolute;
+    right: 10%;
+}
+
+#three{
+    height:1px;
+    width: 100%;
+    background-color:rgba(87, 84, 84, 0.539);
+    position: absolute;
+    bottom: 10%;
+}
+
+#four{
+    height:1px;
+    width: 60%;
+    left: 15%;
+    background-color:rgba(87, 84, 84, 0.539);
+    position: absolute;
+    top: 30%;
+}
+
+#five{
+    height:1px;
+    width: 60%;
+    left: 15%;
+    background-color:rgba(87, 84, 84, 0.539);
+    position: absolute;
+    top: 60%;
+}
+
+#six{
+    height:40%;
+    width: 1px;
+    background-color:rgba(91, 89, 89, 0.726);
+    position: absolute;
+    left: 35%;
+    top:4%
+
+}
+
+#seven{
+    height:40%;
+    width: 1px;
+    background-color:rgba(91, 89, 89, 0.726);
+    position: absolute;
+    left: 55%;
+    top:4%
+
+}
+
+#page16 h1{
+    color: #96909045;
+    font-size:16vw;
+    position: absolute;
+    bottom:5%;
+    left: 5%;
+}
+
+#page16 h4{
+    color: rgba(232, 226, 226, 0.658);
+    position: absolute;
+    top:15%;
+    left: 15%;
+}
+
+#page16 button{
+    color: rgba(232, 226, 226, 0.658);
+    background-color: black;
+    border: 1px solid  rgba(232, 226, 226, 0.658);
+    padding: 10px 40px;
+    border-top-right-radius: 14px;
+    position: absolute;
+    top: 19%;
+    left: 15%;
+}
+
+#cirr{
+    height: 80px;
+    width: 80px;
+    border-radius:50%;
+    
+    position: absolute;
+    left:29%;
+    top: 18%;
+    border: 2px dotted rgb(225, 216, 216);
+    padding:18px;
+   
+    z-index: 9999;
+    transition: all ease-in 1s;
+}
+
+#cirr:hover{
+    transform: scale(1.2);
+}
+#nnn{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 2px solid lightseagreen;
+    position: relative;
+    padding: 17px;
+    z-index: 999;
+    
+}
+
+#pointn{
+    height: 3px;
+    width: 3px;
+    border-radius: 50%;
+    background-color:rgba(128, 117, 117, 0.872);
+    z-index: 9999;
+}
+#page16 h6{
+    color: rgb(171, 164, 164);
+    position: absolute;
+    top: 19%;
+    left: 40%;
+    font-size: 14x;
+}
+
+#page16 h6:hover{
+    color: lightseagreen;
+    cursor: pointer;
+}
+
+#h{
+    color: rgba(32, 178, 171, 0.573);
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    font-size: 1vw;
+}
+#ab{
+    color: rgba(32, 178, 171, 0.573);
+    position: absolute;
+    top: 40%;
+    left: 44%;
+    font-size: 1vw;
+}
+
+#us{
+    color: rgba(32, 178, 171, 0.573);
+    position: absolute;
+    top: 40%;
+    left: 66%;
+    font-size: 1vw;
+}
+
+#icons{
+    height: 80px;width: 200px;
+    /* background-color:red; */
+    position: absolute;
+    right:27%;
+    top: 15%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+#icons i{
+    color: #fff;
+}
